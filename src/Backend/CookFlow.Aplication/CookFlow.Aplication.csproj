@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\CookFlow.Communication\CookFlow.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\CookFlow.Exception\CookFlow.Exception.csproj" />
+    <ProjectReference Include="..\CookFLow.Domain\CookFLow.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

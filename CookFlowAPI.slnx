@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Backend/">
+    <Project Path="src/Backend/CookFlow.api/CookFlow.api.csproj" DisplayName="CookFlow.Api" Id="55eae52d-7299-430a-bcc8-add7afd95d6e" />
+    <Project Path="src/Backend/CookFlow.Aplication/CookFlow.Aplication.csproj" />
+    <Project Path="src/Backend/CookFLow.Domain/CookFLow.Domain.csproj" />
+    <Project Path="src/Backend/CookFlow.Infrastuture/CookFlow.Infrastuture.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/CookFlow.Communication/CookFlow.Communication.csproj" />
+    <Project Path="src/Shared/CookFlow.Exception/CookFlow.Exception.csproj" Id="788d90a5-6c64-4225-b92d-6da077b3519f" />
+  </Folder>
+  <Folder Name="/testes/" />
+</Solution>

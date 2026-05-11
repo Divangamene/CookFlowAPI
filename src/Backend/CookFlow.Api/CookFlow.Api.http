@@ -1,0 +1,6 @@
+@CookFlow.Api_HostAddress = http://localhost:5078
+
+GET {{CookFlow.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

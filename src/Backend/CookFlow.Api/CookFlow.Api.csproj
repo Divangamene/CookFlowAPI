@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\CookFlow.Communication\CookFlow.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\CookFlow.Exception\CookFlow.Exception.csproj" />
+    <ProjectReference Include="..\CookFlow.Aplication\CookFlow.Aplication.csproj" />
+    <ProjectReference Include="..\CookFlow.Infrastuture\CookFlow.Infrastuture.csproj" />
+  </ItemGroup>
+
+</Project>
