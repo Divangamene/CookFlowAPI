@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CookFlow.Communication.Request;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CookFlow.api.Controllers;
 
@@ -6,7 +7,7 @@ namespace CookFlow.api.Controllers;
 public class UserController : Controller
 {
     [HttpPost]
-    public IActionResult Register()
+    public IActionResult Register([FromBody] RequestRegisterUserAccountJson request)
     {
 
         return Created();
