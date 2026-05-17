@@ -1,4 +1,5 @@
 ﻿using CookFlow.Communication.Request;
+using CookFlow.Exception;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,8 @@ namespace CookFlow.Aplication.UseCases.User.Register
     {
     public RegisterUserAccountValidator() {
 
-            RuleFor(User => User.Nome).NotEmpty().WithMessage("O nome não pode ser nulo");
-            RuleFor(user => user.Email).NotEmpty().WithMessage("Email nao pode ser nulo");
+            RuleFor(User => User.Nome).NotEmpty().WithMessage(ResourceMessagesException.VALIDATION_NAME_REQUIRED);
+            RuleFor(user => user.Email).NotEmpty().WithMessage(ResourceMessagesException.VALIDATION_EMAIL_REQUIRED);
             RuleFor(user => user.Password).NotEmpty().WithMessage("Password nao pode ser nulo");
             When(user => string.IsNullOrWhiteSpace(user.Email) ==false, () =>
             {
