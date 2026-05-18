@@ -1,4 +1,6 @@
 ﻿using CookFlow.Communication.Request;
+using Mapster;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CookFlow.Aplication.UseCases.User.Register;
 
@@ -7,6 +9,8 @@ namespace CookFlow.Aplication.UseCases.User.Register;
     public void Execute(RequestRegisterUserAccountJson request)
     {
         var validator= new RegisterUserAccountValidator();
-        validator.Validate(request);
+         var  result=validator.Validate(request);
+        var user = request.Adapt<CookFLow.Domain.Entities.User>();
+       
     }
 }

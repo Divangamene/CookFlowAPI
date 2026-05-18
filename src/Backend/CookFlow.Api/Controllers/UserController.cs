@@ -11,7 +11,7 @@ public class UserController : Controller
     public IActionResult Register([FromBody] RequestRegisterUserAccountJson request)
     {
         var UseCase = new RegisterUserAccountUseCase();
-        UseCase.Execute(request);
+       
 
         return Created();
     }

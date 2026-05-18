@@ -16,7 +16,7 @@ namespace CookFlow.Aplication.UseCases.User.Register
             RuleFor(user => user.Password).NotEmpty().WithMessage("Password nao pode ser nulo");
             When(user => string.IsNullOrWhiteSpace(user.Email) ==false, () =>
             {
-                RuleFor(user => user.Email).EmailAddress().WithMessage("Email deve ser valido");
+                RuleFor(user => user.Email).EmailAddress().WithMessage(ResourceMessagesException.VALIDATION_EMAIL_REQUIRED);
             });
 
             
