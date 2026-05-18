@@ -10,7 +10,7 @@ namespace CookFlow.Aplication.UseCases.User.Register;
     {
         var validator= new RegisterUserAccountValidator();
          var  result=validator.Validate(request);
-        var user = request.Adapt<CookFLow.Domain.Entities.User>();
+         var user = request.Adapt<CookFLow.Domain.Entities.User>();
        
     }
 }
